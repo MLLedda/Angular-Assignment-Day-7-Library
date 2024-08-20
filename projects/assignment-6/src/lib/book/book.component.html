@@ -1,0 +1,12 @@
+<p>book works!</p>
+<h2>Book Management</h2>
+<button (click)="createBook()">Create Book</button>
+<button (click)="readBooks()">Read Books</button>
+<button (click)="updateBook(1, 'Updated Book', 'Updated Author')">Update Book 1</button>
+<button (click)="deleteBook(1)">Delete Book 1</button>
+
+<ul>
+  <li *ngFor="let book of books">
+    {{ book.title }} - {{ book.author }}
+  </li>
+</ul>

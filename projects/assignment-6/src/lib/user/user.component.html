@@ -1,0 +1,12 @@
+<p>user works!</p>
+<h2>User Management</h2>
+<button (click)="createUser()">Create User</button>
+<button (click)="readUser()">Read Users</button>
+<button (click)="updateUser(1, 'Updated User', 'updated@example.com')">Update User 1</button>
+<button (click)="deleteUser(1)">Delete User 1</button>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }} - {{ user.email }}
+  </li>
+</ul>
